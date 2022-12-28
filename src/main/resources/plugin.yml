@@ -1,5 +1,5 @@
 name: BlockWriter
-main: com.nametagedit.plugin.BlockWriter
+main: com.nametagedit.plugin.BlockWriter.Main
 version: 2.0.0
 api-version: 1.13
 authors: [coldandtired, Cory]
