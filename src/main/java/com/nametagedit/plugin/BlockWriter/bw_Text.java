@@ -1,4 +1,4 @@
-package com.nametagedit.plugin.BlockWriter.Main;
+package com.nametagedit.plugin.BlockWriter;
 
 import java.util.ArrayList;
 import org.bukkit.block.Block;
