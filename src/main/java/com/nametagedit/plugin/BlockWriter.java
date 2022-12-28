@@ -1,36 +1,33 @@
- package me.coldandtired.block_writer;
+package com.nametagedit.plugin.BlockWriter
  
- import java.io.File;
- import java.util.ArrayList;
- import java.util.HashMap;
- import java.util.Map;
- import javax.xml.parsers.DocumentBuilderFactory;
- import org.bukkit.ChatColor;
- import org.bukkit.Material;
- import org.bukkit.block.Block;
- import org.bukkit.block.BlockFace;
- import org.bukkit.command.Command;
- import org.bukkit.command.CommandSender;
- import org.bukkit.configuration.file.FileConfiguration;
- import org.bukkit.entity.Player;
- import org.bukkit.material.MaterialData;
- import org.bukkit.plugin.PluginDescriptionFile;
- import org.bukkit.plugin.java.JavaPlugin;
- import org.w3c.dom.Document;
- import org.w3c.dom.Element;
- import org.w3c.dom.NodeList;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import javax.xml.parsers.DocumentBuilderFactory;
+import org.bukkit.ChatColor;
+import org.bukkit.Material;
+import org.bukkit.block.Block;
+import org.bukkit.block.BlockFace;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandSender;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.entity.Player;
+import org.bukkit.material.MaterialData;
+import org.bukkit.plugin.PluginDescriptionFile;
+import org.bukkit.plugin.java.JavaPlugin;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
  
  
  public class Main
-   extends JavaPlugin
- {
+   extends JavaPlugin {
    private Map<String, bw_Text> bw_data = new HashMap<String, bw_Text>();
    private Map<Character, String> chars = new HashMap<Character, String>();
    private Document doc = null;
    protected FileConfiguration config = null;
- 
- 
-   
+    
    public void onDisable() {
      this.bw_data = null;
      this.chars = null;
